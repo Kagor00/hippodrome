@@ -1,8 +1,10 @@
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import org.mockito.MockedStatic;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.mockStatic;
 
 class HorseTest {
 
@@ -46,7 +48,7 @@ class HorseTest {
     void getName_ReturnsCorrectName() {
         String name = "TestName";
         double speed = 5.5;
-        double distance = 6.5;
+        double distance = 5.5;
         Horse horse = new Horse(name, speed, distance);
         String actualName = horse.getName();
         assertEquals(name, actualName);
@@ -73,10 +75,16 @@ class HorseTest {
     }
 
     @Test
-    void move() {
-    }
-
-    @Test
-    void getRandomDouble() {
+    void move_CallsGetRandomDoubleMethodWithCorrectParams() {
+        String name = "TestName";
+        double speed = 1.0;
+        double distance = 2.0;
+        double lowerBound = 0.2;
+        double upperBound = 0.9;
+        Horse horse = new Horse(name, speed, distance);
+        try (MockedStatic<Horse> horseMockedStatic = mockStatic(Horse.class)) {
+            horse.move();
+            horseMockedStatic.verify(() -> Horse.getRandomDouble(lowerBound, upperBound));
+        }
     }
 }
