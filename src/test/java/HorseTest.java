@@ -28,6 +28,13 @@ class HorseTest {
         assertEquals(expectedMessage, exception.getMessage());
     }
 
+    @Test
+    void constructor_NegativeNumberParamDistance_ThrowsIllegalArgumentException() {
+        String expectedMessage = "Distance cannot be negative.";
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> new Horse("name", 1, -10));
+        assertEquals(expectedMessage, exception.getMessage());
+    }
+
 
 
     @Test
