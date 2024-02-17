@@ -22,14 +22,14 @@ class HorseTest {
     }
 
     @Test
-    void constructor_NegativeNumberParamSpeed_ThrowsIllegalArgumentException() {
+    void constructor_NegativeSpeedParamPassed_ThrowsIllegalArgumentException() {
         String expectedMessage = "Speed cannot be negative.";
         Exception exception = assertThrows(IllegalArgumentException.class, () -> new Horse("name", -10, 2));
         assertEquals(expectedMessage, exception.getMessage());
     }
 
     @Test
-    void constructor_NegativeNumberParamDistance_ThrowsIllegalArgumentException() {
+    void constructor_NegativeDistanceParamPassed_ThrowsIllegalArgumentException() {
         String expectedMessage = "Distance cannot be negative.";
         Exception exception = assertThrows(IllegalArgumentException.class, () -> new Horse("name", 1, -10));
         assertEquals(expectedMessage, exception.getMessage());
