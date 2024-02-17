@@ -43,9 +43,11 @@ class HorseTest {
     }
 
     @Test
-    void getName_ReturnCorrectName() {
+    void getName_ReturnsCorrectName() {
         String expectedName = "Mark";
-        Horse horse = new Horse(expectedName, 1, 1);
+        int speed = 1;
+        int distance = 1;
+        Horse horse = new Horse(expectedName, speed, distance);
         String actualName = horse.getName();
         assertEquals(expectedName, actualName);
     }
