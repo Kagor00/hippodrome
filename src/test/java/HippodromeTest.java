@@ -24,7 +24,24 @@ class HippodromeTest {
     }
 
     @Test
-    void getHorses() {
+    void getHorses_ReturnsCorrectHorseList() {
+        List<Horse> expectedHorseList = createListOfDifferenceHorses();
+        Hippodrome hippodrome = new Hippodrome(expectedHorseList);
+        List<Horse> actualHorseList = hippodrome.getHorses();
+        assertEquals(expectedHorseList, actualHorseList);
+
+    }
+
+    private List<Horse> createListOfDifferenceHorses() {
+        List<Horse> horseList = new ArrayList<>();
+        for(int i = 0; i < 30; i++) {
+            String name = "Name " + (i + 1);
+            double speed = i + 1;
+            double distance = i + 1;
+            Horse horse = new Horse(name, speed, distance);
+            horseList.add(horse);
+        }
+        return horseList;
     }
 
     @Test
