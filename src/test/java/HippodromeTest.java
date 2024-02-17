@@ -1,9 +1,11 @@
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class HippodromeTest {
 
@@ -25,7 +27,13 @@ class HippodromeTest {
 
     @Test
     void getHorses_ReturnsCorrectHorseList() {
-        List<Horse> expectedHorseList = createListOfDifferenceHorses(30);
+        List<Horse> expectedHorseList = new ArrayList<>();
+
+        for(int i = 0; i < 30; i++) {
+            Horse horse = new Horse("Horse " + i, i, i);
+            expectedHorseList.add(horse);
+        }
+
         Hippodrome hippodrome = new Hippodrome(expectedHorseList);
         List<Horse> actualHorseList = hippodrome.getHorses();
         assertEquals(expectedHorseList, actualHorseList);
@@ -34,18 +42,21 @@ class HippodromeTest {
         assertEquals("Horse 29", actualHorseList.get(29).getName());
     }
 
-    private List<Horse> createListOfDifferenceHorses(int count) {
-        List<Horse> horseList = new ArrayList<>();
-        for(int i = 0; i < count; i++) {
-            Horse horse = new Horse("Horse " + i, i, i);
-            horseList.add(horse);
-        }
-        return horseList;
-    }
 
     @Test
     void move_CallsMoveMethodForAllHorses() {
-        List<Horse> horseList = createListOfDifferenceHorses(50);
+        List<Horse> horseList = new ArrayList<>();
+
+        for (int i = 0; i < 50; i++) {
+            horseList.add(Mockito.mock(Horse.class));
+        }
+
+        Hippodrome hippodrome = new Hippodrome(horseList);
+        hippodrome.move();
+
+        for (Horse horse: horseList) {
+            Mockito.verify(horse, Mockito.times(1)).move();
+        }
 
     }
 
