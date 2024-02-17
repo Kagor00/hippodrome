@@ -44,16 +44,22 @@ class HorseTest {
 
     @Test
     void getName_ReturnsCorrectName() {
-        String expectedName = "Mark";
-        int speed = 1;
-        int distance = 1;
-        Horse horse = new Horse(expectedName, speed, distance);
+        String name = "TestName";
+        int speed = 10;
+        int distance = 10;
+        Horse horse = new Horse(name, speed, distance);
         String actualName = horse.getName();
-        assertEquals(expectedName, actualName);
+        assertEquals(name, actualName);
     }
 
     @Test
-    void getSpeed() {
+    void getSpeed_ReturnsCorrectSpeed() {
+        String name = "TestName";
+        int speed = 10;
+        int distance = 10;
+        Horse horse = new Horse(name, speed, distance);
+        int actualSpeed = (int) horse.getSpeed();
+        assertEquals(speed, actualSpeed);
     }
 
     @Test
