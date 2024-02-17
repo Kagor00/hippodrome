@@ -2,7 +2,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Vector;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -26,13 +25,7 @@ class HippodromeTest {
 
     @Test
     void getHorses_ReturnsCorrectHorseList() {
-        List<Horse> expectedHorseList = new ArrayList<>();
-
-        for(int i = 0; i < 30; i++) {
-            Horse horse = new Horse("Horse " + i, i, i);
-            expectedHorseList.add(horse);
-        }
-
+        List<Horse> expectedHorseList = createListOfDifferenceHorses(30);
         Hippodrome hippodrome = new Hippodrome(expectedHorseList);
         List<Horse> actualHorseList = hippodrome.getHorses();
         assertEquals(expectedHorseList, actualHorseList);
@@ -41,10 +34,18 @@ class HippodromeTest {
         assertEquals("Horse 29", actualHorseList.get(29).getName());
     }
 
+    private List<Horse> createListOfDifferenceHorses(int count) {
+        List<Horse> horseList = new ArrayList<>();
+        for(int i = 0; i < count; i++) {
+            Horse horse = new Horse("Horse " + i, i, i);
+            horseList.add(horse);
+        }
+        return horseList;
+    }
 
     @Test
     void move_CallsMoveMethodForAllHorses() {
-        List<Horse> horseList = new ArrayList<>();
+        List<Horse> horseList = createListOfDifferenceHorses(50);
 
     }
 
