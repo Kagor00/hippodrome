@@ -8,18 +8,18 @@ import static org.junit.jupiter.api.Assertions.*;
 class HippodromeTest {
 
     @Test
-    void constructor_NullParamPassed_ThrowsIllegalArgumentException() {
-        List<Horse> nullHorses = null;
+    void constructor_NullListParamPassed_ThrowsIllegalArgumentException() {
+        List<Horse> horseList = null;
         String expectedMessage = "Horses cannot be null.";
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> new Hippodrome(nullHorses));
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> new Hippodrome(horseList));
         assertEquals(expectedMessage, exception.getMessage());
     }
 
     @Test
-    void constructor_EmptyParamPassed_ThrowsIllegalArgumentException() {
-        List<Horse> emptyHorses = new ArrayList<>();
+    void constructor_EmptyListParamPassed_ThrowsIllegalArgumentException() {
+        List<Horse> emptyHorseList = new ArrayList<>();
         String expectedMessage = "Horses cannot be empty.";
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> new Hippodrome(emptyHorses));
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> new Hippodrome(emptyHorseList));
         assertEquals(expectedMessage, exception.getMessage());
     }
 
@@ -29,7 +29,6 @@ class HippodromeTest {
         Hippodrome hippodrome = new Hippodrome(expectedHorseList);
         List<Horse> actualHorseList = hippodrome.getHorses();
         assertEquals(expectedHorseList, actualHorseList);
-
     }
 
     private List<Horse> createListOfDifferenceHorses() {
