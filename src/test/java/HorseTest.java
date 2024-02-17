@@ -24,21 +24,30 @@ class HorseTest {
     @Test
     void constructor_NegativeSpeedParamPassed_ThrowsIllegalArgumentException() {
         String expectedMessage = "Speed cannot be negative.";
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> new Horse("name", -10, 2));
+        String name = "TestName";
+        int speed = -10;
+        int distance = 2;
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> new Horse(name, speed, distance));
         assertEquals(expectedMessage, exception.getMessage());
     }
 
     @Test
     void constructor_NegativeDistanceParamPassed_ThrowsIllegalArgumentException() {
         String expectedMessage = "Distance cannot be negative.";
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> new Horse("name", 1, -10));
+        String name = "TestName";
+        int speed = 2;
+        int distance = -10;
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> new Horse(name, speed, distance));
         assertEquals(expectedMessage, exception.getMessage());
     }
 
-
-
     @Test
-    void getName() {
+    void getName_ReturnCorrectName() {
+        String expectedName = "Mark";
+        Horse horse = new Horse(expectedName, 1, 1);
+        String actualName = horse.getName();
+        assertEquals(expectedName, actualName);
     }
 
     @Test
