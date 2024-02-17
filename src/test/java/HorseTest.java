@@ -8,18 +8,20 @@ class HorseTest {
 
     @Test
     void constructor_NullNameParamPassed_ThrowsIllegalArgumentException() {
-        String expectedMassage = "Name cannot be null.";
+        String expectedMessage = "Name cannot be null.";
         Exception exception = assertThrows(IllegalArgumentException.class, () -> new Horse(null, 1, 2));
-        assertEquals(expectedMassage, exception.getMessage());
+        assertEquals(expectedMessage, exception.getMessage());
     }
 
     @ParameterizedTest
     @ValueSource(strings = {" ", "  ", "\n", "\n\n", "\t", "\t\t", "\t \t", "\t  \t"})
     void constructor_EmptyStringNameParamPassed_ThrowsIllegalArgumentException(String name) {
-        String expectedMassage = "Name cannot be blank.";
+        String expectedMessage = "Name cannot be blank.";
         Exception exception = assertThrows(IllegalArgumentException.class, () -> new Horse(name, 1, 2));
-        assertEquals(expectedMassage, exception.getMessage());
+        assertEquals(expectedMessage, exception.getMessage());
     }
+
+
 
     @Test
     void getName() {
