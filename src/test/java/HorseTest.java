@@ -55,15 +55,21 @@ class HorseTest {
     @Test
     void getSpeed_ReturnsCorrectSpeed() {
         String name = "TestName";
-        int speed = 10;
-        int distance = 10;
+        double speed = 7.5;
+        double distance = 10.5;
         Horse horse = new Horse(name, speed, distance);
-        int actualSpeed = (int) horse.getSpeed();
+        double actualSpeed = horse.getSpeed();
         assertEquals(speed, actualSpeed);
     }
 
     @Test
-    void getDistance() {
+    void getDistance_ReturnsCorrectDistance() {
+        String name = "TestName";
+        double speed = 7.5;
+        double distance = 10.5;
+        Horse horse = new Horse(name, speed, distance);
+        double actualDistance = horse.getDistance();
+        assertEquals(distance, actualDistance);
     }
 
     @Test
