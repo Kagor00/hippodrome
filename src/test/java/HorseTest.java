@@ -21,6 +21,13 @@ class HorseTest {
         assertEquals(expectedMessage, exception.getMessage());
     }
 
+    @Test
+    void constructor_NegativeNumberParamSpeed_ThrowsIllegalArgumentException() {
+        String expectedMessage = "Speed cannot be negative.";
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> new Horse("name", -10, 2));
+        assertEquals(expectedMessage, exception.getMessage());
+    }
+
 
 
     @Test
