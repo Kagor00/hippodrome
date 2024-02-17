@@ -61,6 +61,16 @@ class HippodromeTest {
     }
 
     @Test
-    void getWinner() {
+    void getWinner_ReturnsCorrectWinner() {
+        Hippodrome hippodrome = new Hippodrome(List.of(
+                new Horse("Horse 1", 1, 1),
+                new Horse ("Horse 2", 5, 5),
+                new Horse("Horse 3", 10, 10),
+                new Horse("Horse 4", 12, 15),
+                new Horse("Horse 5", 15, 20)
+        ));
+        String expectedWinnerName = "Horse 5";
+        String actualWinnerName = hippodrome.getWinner().getName();
+        assertEquals(expectedWinnerName, actualWinnerName);
     }
 }
