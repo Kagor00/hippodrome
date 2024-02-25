@@ -1,0 +1,10 @@
+2024-02-25 22:15:14.282 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Bucephalus], speed [2.4]
+2024-02-25 22:15:14.287 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Ace of Spades], speed [2.5]
+2024-02-25 22:15:14.287 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Zephyr], speed [2.6]
+2024-02-25 22:15:14.288 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Blaze], speed [2.7]
+2024-02-25 22:15:14.289 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Lobster], speed [2.8]
+2024-02-25 22:15:14.292 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Pegasus], speed [2.9]
+2024-02-25 22:15:14.293 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Cherry], speed [3.0]
+2024-02-25 22:15:14.294 INFO [main] [Hippodrome.<init>(Hippodrome.java:27)] -Hippodrome: create Hippodrome, horses [7]
+2024-02-25 22:15:14.295 INFO [main] [Main.main(Main.java:21)] -Start of the race. Number of participants: 7
+2024-02-25 22:15:35.058 INFO [main] [Main.main(Main.java:31)] -End of the race. Winner is: Cherry
