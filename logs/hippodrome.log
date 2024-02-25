@@ -8,3 +8,65 @@
 2024-02-25 22:15:14.294 INFO [main] [Hippodrome.<init>(Hippodrome.java:27)] -Hippodrome: create Hippodrome, horses [7]
 2024-02-25 22:15:14.295 INFO [main] [Main.main(Main.java:21)] -Start of the race. Number of participants: 7
 2024-02-25 22:15:35.058 INFO [main] [Main.main(Main.java:31)] -End of the race. Winner is: Cherry
+2024-02-25 22:23:25.992 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 1], speed [1.0]
+2024-02-25 22:23:25.999 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 2], speed [5.0]
+2024-02-25 22:23:25.999 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 3], speed [10.0]
+2024-02-25 22:23:25.999 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 4], speed [12.0]
+2024-02-25 22:23:25.999 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 5], speed [15.0]
+2024-02-25 22:23:26.000 INFO [main] [Hippodrome.<init>(Hippodrome.java:27)] -Hippodrome: create Hippodrome, horses [5]
+2024-02-25 22:23:26.033 INFO [main] [Hippodrome.<init>(Hippodrome.java:21)] -Hippodrome: Horses list is empty
+2024-02-25 22:23:26.037 INFO [main] [Hippodrome.<init>(Hippodrome.java:18)] -ERROR Hippodrome: Horses list is null
+2024-02-25 22:23:26.042 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 0], speed [0.0]
+2024-02-25 22:23:26.043 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 1], speed [1.0]
+2024-02-25 22:23:26.043 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 2], speed [2.0]
+2024-02-25 22:23:26.044 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 3], speed [3.0]
+2024-02-25 22:23:26.044 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 4], speed [4.0]
+2024-02-25 22:23:26.045 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 5], speed [5.0]
+2024-02-25 22:23:26.045 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 6], speed [6.0]
+2024-02-25 22:23:26.045 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 7], speed [7.0]
+2024-02-25 22:23:26.046 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 8], speed [8.0]
+2024-02-25 22:23:26.046 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 9], speed [9.0]
+2024-02-25 22:23:26.046 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 10], speed [10.0]
+2024-02-25 22:23:26.046 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 11], speed [11.0]
+2024-02-25 22:23:26.047 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 12], speed [12.0]
+2024-02-25 22:23:26.047 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 13], speed [13.0]
+2024-02-25 22:23:26.048 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 14], speed [14.0]
+2024-02-25 22:23:26.048 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 15], speed [15.0]
+2024-02-25 22:23:26.049 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 16], speed [16.0]
+2024-02-25 22:23:26.050 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 17], speed [17.0]
+2024-02-25 22:23:26.050 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 18], speed [18.0]
+2024-02-25 22:23:26.051 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 19], speed [19.0]
+2024-02-25 22:23:26.052 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 20], speed [20.0]
+2024-02-25 22:23:26.052 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 21], speed [21.0]
+2024-02-25 22:23:26.053 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 22], speed [22.0]
+2024-02-25 22:23:26.053 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 23], speed [23.0]
+2024-02-25 22:23:26.054 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 24], speed [24.0]
+2024-02-25 22:23:26.054 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 25], speed [25.0]
+2024-02-25 22:23:26.055 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 26], speed [26.0]
+2024-02-25 22:23:26.055 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 27], speed [27.0]
+2024-02-25 22:23:26.055 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 28], speed [28.0]
+2024-02-25 22:23:26.055 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [Horse 29], speed [29.0]
+2024-02-25 22:23:26.055 INFO [main] [Hippodrome.<init>(Hippodrome.java:27)] -Hippodrome: create Hippodrome, horses [30]
+2024-02-25 22:23:27.225 INFO [main] [Hippodrome.<init>(Hippodrome.java:27)] -Hippodrome: create Hippodrome, horses [50]
+2024-02-25 22:23:27.344 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [TestName], speed [7.5]
+2024-02-25 22:23:27.467 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [TestName], speed [2.5]
+2024-02-25 22:23:27.500 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [TestName], speed [2.5]
+2024-02-25 22:23:27.506 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [TestName], speed [2.5]
+2024-02-25 22:23:27.513 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [TestName], speed [2.5]
+2024-02-25 22:23:27.519 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [TestName], speed [2.5]
+2024-02-25 22:23:27.524 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [TestName], speed [2.5]
+2024-02-25 22:23:27.528 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [TestName], speed [2.5]
+2024-02-25 22:23:27.533 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [TestName], speed [2.5]
+2024-02-25 22:23:27.537 INFO [main] [Horse.<init>(Horse.java:16)] -ERROR Horse: Name is null
+2024-02-25 22:23:27.540 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [TestName], speed [5.5]
+2024-02-25 22:23:27.543 INFO [main] [Horse.<init>(Horse.java:35)] -DEBUG Horse: create Horse, name [TestName], speed [7.5]
+2024-02-25 22:23:27.547 INFO [main] [Horse.<init>(Horse.java:23)] -ERROR Horse: Speed is negative
+2024-02-25 22:23:27.554 INFO [main] [Horse.<init>(Horse.java:19)] -ERROR Horse: Name is blank
+2024-02-25 22:23:27.558 INFO [main] [Horse.<init>(Horse.java:19)] -ERROR Horse: Name is blank
+2024-02-25 22:23:27.562 INFO [main] [Horse.<init>(Horse.java:19)] -ERROR Horse: Name is blank
+2024-02-25 22:23:27.567 INFO [main] [Horse.<init>(Horse.java:19)] -ERROR Horse: Name is blank
+2024-02-25 22:23:27.570 INFO [main] [Horse.<init>(Horse.java:19)] -ERROR Horse: Name is blank
+2024-02-25 22:23:27.574 INFO [main] [Horse.<init>(Horse.java:19)] -ERROR Horse: Name is blank
+2024-02-25 22:23:27.578 INFO [main] [Horse.<init>(Horse.java:19)] -ERROR Horse: Name is blank
+2024-02-25 22:23:27.582 INFO [main] [Horse.<init>(Horse.java:19)] -ERROR Horse: Name is blank
+2024-02-25 22:23:27.586 INFO [main] [Horse.<init>(Horse.java:27)] -ERROR Horse: Distance is negative
